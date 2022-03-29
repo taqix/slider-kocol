@@ -1,0 +1,23 @@
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#back {
+  margin-top: 50px;
+  position: static;
+  width: 13%;
+  background-color: #6f8eae;
+
+  height: 60px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: all 0.5s ease-in-out;
+}
+#back:hover {
+  cursor: pointer;
+  box-shadow: 0 0 0.3em #f4f4f4;
+}
