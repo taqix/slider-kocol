@@ -1,51 +1,149 @@
-/*FIXME: poprawic responywnosc strony */
 @import url(global.css);
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&display=swap');
-* {
-  color: #ffffff;
-  font-family: 'Euqlid';
-}
 
 body {
-  background-image: url('../img/background-img.png');
+  /* background-image: url('../img/background-img.png'); */
+  background-image: url('../img/test-bg-2.png');
   background-size: cover;
 }
-#container {
-  width: 100%;
-  height: calc(100vh - 180px);
+
+/* --------------------EXCERCISE DIV-------------------- */
+
+.excercise{
+  width: 60px;
+  height: 80px;
+  background-color: white;
+  opacity: 0.05;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  top: 25px;
   display: flex;
-  padding: 5px;
-  gap: 10px;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  border-bottom-left-radius: 30px 30px;
+  border-top-left-radius: 30px 30px;
+  transition: all 1s ease-in-out;
+}
+
+.excercise:hover{
+  opacity: 1;
+  cursor: pointer;
+  width: 150px;
+}
+
+.excercise:hover p, .excercise:hover i{
+  opacity: 1;
+}
+
+.excercise p{
+  color: var(--color3);
+  font-size: 1em;
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+
+.excercise i{
+  color: var(--color3);
+  font-size: 2.5em;
+  opacity: 0;
+  transition: 0.8s ease-in-out;
+}
+
+/* --------------------MAIN CONTENT-------------------- */
+
+.main-container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
-.optBox {
-  width: 33%;
-  min-width: 300px;
-  height: 270px;
-  display: flex;
-  justify-content: center;
 
+.main-title{
+  width: 100%;
+  height: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  font-size: 8em;
+  text-shadow: 3px 2px 17px rgba(0, 0, 0, 0.2);
+}
+
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.optBox {
+  width: 40%;
+  height: 30%;
+  min-width: 400px;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
 
   border-radius: 20px;
-  transform: scale(1);
   transition: all 0.4s ease-in-out;
-  box-shadow: none;
-}
-.name {
-  margin-right: 100px;
-  font-size: 3em;
-  font-weight: bold;
 }
 
 .optBox:hover {
   cursor: pointer;
   transform: scale(1.05);
-  box-shadow: 0 0 0.45em #ffffff;
+  box-shadow: 0 0 0.8em #ffffff40;
 }
-@font-face {
-  font-family: 'Euqlid';
-  src: URL('../fonts/Euclid-Circular.ttf') format('truetype');
+
+.name {
+  width: 40%;
+  font-size: clamp(2em, 3vw, 5vw);
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 3px 2px 17px rgba(0, 0, 0, 0.4);
+}
+
+.theoryBox img, .practiseBox img{
+  width: 25%;
+}
+
+/* --------------------FOOTER-------------------- */
+
+footer{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer div{
+  font-size: 0.7em;
+  letter-spacing: 0.8px;
+  word-spacing: 2.5px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* --------------------ANIAMCJE-------------------- */
+
+/*można sonie użyć*/
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }

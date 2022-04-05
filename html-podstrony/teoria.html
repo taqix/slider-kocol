@@ -1,44 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/teoria.css" />
-    <link rel="stylesheet" href="../css/fontello.css">
-    <script src="../js/index.js" defer></script>
-  </head>
-  <body>
-    <div class="arrow-left">
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLIDER - Teoria</title>
+
+  <!-----------STYLE---------->
+  <link rel="stylesheet" href="../css/teoria.css" />
+  <link rel="stylesheet" href="../css/fontello.css">
+
+  <!-----------SCRIPT---------->
+  <script src="../js/link-functions.js" defer></script>
+  <script src="../js/slide-nav.js" defer></script>
+
+</head>
+
+<body onmousemove="showNav(event)">
+
+  <div id="current-slide-number" class="slide-number"><p>1/10</p></div>
+
+  <nav id="slide-nav" class="navigation">
+    <div id="arrow-left-icon" class="arrow-left" onclick="prevSlide()">
       <i class="icon-left-arrow" style="margin-top: 10px; margin-right: 5px;"></i>
     </div>
-    <div class="home-center" onclick="powrotIndex()">
+    <div id="home-icon" class="home-center" onclick="powrotIndex()">
       <i class="icon-home" style="margin-right: 5px;"></i>
       <p>POWRÓT</p>
     </div>
-    <div class="arrow-right">
+    <div id="arrow-right-icon" class="arrow-right" onclick="nextSlide()">
       <i class="icon-right-arrow" style="margin-top: 10px; margin-left: 10px;"></i></i>
     </div>
-    <section class="slides" id="slide-1">
-      <div class="slide-text">
-        <div class="title">
-          CO TO JEST SLIDER?
-        </div>
-        <div class="subtitle">
-          czyli krótko o "przewijaku" na stronach
-        </div>  
-        <div class="opis">
-          Slider to termin odnoszący się do pokazu slajdów na stronie internetowej. Jest to automatycznie lub w momencie interakcji z użytkownikiem zmieniające się okienko ze zdjęciemi. Slidery znajdują zastosowanie we wszystkich rodzajach stron i są świetnym sposobem na szybkie pokazanie wielu opcji i pomagają użytkownikom szybko je posortować.
-        </div>
-        <div class="slide-img-box">
-          <img class="slide-img" src="../img/slide-1-img.png" alt="slider-img">
-        </div>
+  </nav>
+
+
+  <section class="slides" id="slide-1">
+    <div class="slide-text">
+      <div class="title">
+        CO TO JEST SLIDER?
       </div>
-    </section>
-    <section class="slides" id="slide-1">
-      
-    </section>
-  </body>
+      <div class="subtitle">
+        czyli krótko o "przewijaku" na stronach
+      </div>
+      <div class="opis">
+        Slider to termin odnoszący się do pokazu slajdów na stronie internetowej. Jest to automatycznie lub w momencie
+        interakcji z użytkownikiem zmieniające się okienko ze zdjęciami. Slidery znajdują zastosowanie prawie we wszystkich rodzajach stron internetowych i są świetnym sposobem na szybkie pokazanie wielu opcji, a także posortowaniu ich.
+      </div>
+    </div>
+    <div class="slide-img-box">
+      <img class="slide-img" src="../img/slide-1-img.png" alt="slider-img">
+    </div>
+  </section>
+
+  <section class="slides" id="slide-2">
+    <div class="slide-text">
+      <div class="title">
+        ZALETY STOSOWANIA SLIDER'ÓW
+      </div>
+      <div class="subtitle">
+        czyli o tym dlaczego warto je stoswać
+      </div>
+      <div class="opis">
+        <ul>
+          <li>
+            <p>Oszczędzają miejsce:</p>Dzięki zastosawaniu slider'ów można umieści znacznie więcej treści w danycm
+            miejscu
+          </li>
+          <li>
+            <p>Angażowanie użytkowników:</p>Przeglądający bardzo często zatrzymują się przy slider'ach, aby przeglądnąć
+            ich zawartość
+          </li>
+          <li>
+            <p>Koncentrują elementy:</p>Dzięki tej zalecie slider'y nie rospraszają uwagi i pozwalają stopniowo
+            pokazywać ofertę
+          </li>
+          <li>
+            <p>Kontrolują treść:</p>Pozwalają użytkownikom na przechodzenie przez slider'y w ich własnym tempie lub
+            pomijania ich jeśli dana treść ich nie interesuje
+          </li>
+        </ul>
+      </div>
+      <div class="slide-img-box">
+        <img class="slide-img" src="../img/slide-2-img.png" alt="slider-img">
+      </div>
+    </div>
+  </section>
+
+  <section class="slides" id="slide-3">
+    <div class="slide-text">
+      <div class="title">
+        WADY STOSOWANIA SLIDER'ÓW
+      </div>
+      <div class="subtitle">
+        czyli o ciemnej stronie "przewijaków"
+      </div>
+      <div class="opis">
+        <ul>
+          <li>
+            <p>Spowalniają stronę:</p>Slider'y, choć nieznacznie to jednak wpływają na SEO i współczynnik konwersji
+          </li>
+          <li>
+            <p>Problem na urządzeniach mobilnych:</p>Niektóre slider'y nie są przystowsowane do urządzeń mobilnych,
+            przez co mogą powodować problemy i skutecznie zniechęcić odbiorcę
+          </li>
+          <li>
+            <p>Podobieństwo do reklamy:</p>Odwiedzający mogą potraktować slider jak reklamę i pominąć go
+          </li>
+          <li>
+            <p>Wpływ na użytkownika:</p>Niektórzy twierdzą, że automatyczne slider'y mogą mieć tak samo negatywny wpływ
+            na użytkownika jak automatycznie odtwarzane wideo
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-img-box">
+      <img class="slide-img" src="../img/slide-3-img.png" alt="slider-img">
+    </div>
+  </section>
+
+  <section class="slides" id="slide-4">
+    <div class="slide-text">
+      <div class="title">
+        ZASTOSOWANIA SLIDER'ÓW
+      </div>
+      <div class="subtitle">
+        czyli porady nie od parady
+      </div>
+      <div class="opis">
+        <ul>
+          <li>
+            <p>Prezentacja produktów:</p>Gdy odwiedzający stronę widzą duże porcje informacji, może to być przytłaczające. Slider'y pozwalają przedstawić ofertę w seri kroków tworząc wizualną prezentację dla odbiorcy
+          </li>
+          <li>
+            <p>Wyróżnij nową treść:</p>Osoby odwiedzające witrynę po raz pierwszy często chcą wiedzieć, jakie są ich możliwości i co dana witryna ma do zaoferowania
+          </li>
+          <li>
+            <p>Zaprezentuj nowości:</p>Jeżeli regularnie aktualizujesz swoją stronę, slider'y mogą podkreślać aktualizacje. Każda aktualizacja jest na pierwszym planie tak długo, jak długo jest to najnowsza wiadomość lub najnowsza oferta. Dzięki temu użytkownicy od razu wiedzą, kiedy coś się zmieniło
+          </li>
+          <li>
+            <p>Inne rady:</p>Unikaj rozpraszania uwagi przez slidery, minimalizując przejścia i wybierając miękkie animacje. Ułatw nawigację za pomocą widocznych przycisków strzałek do poruszania się do tyłu i do przodu. Pozwól użytkownikom mobilnym na przesuwanie palcem po stronie. Zoptymalizuj czas ładowania strony, stosując najmniejszy możliwy rozmiar obrazu
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="slide-img-box">
+      <img class="slide-img" src="../img/slide-4-img.png" alt="slider-img">
+    </div>
+  </section>
+
+</body>
+
 </html>

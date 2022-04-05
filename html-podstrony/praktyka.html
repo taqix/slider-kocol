@@ -1,25 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/main.css" />
-    <link rel="stylesheet" href="../css/praktyka.css" />
-    <link rel="stylesheet" href="../css/fontello.css">  
-    <script src="../js/index.js" defer></script>
-  </head>
-  <body>
-    <div class="arrow-left">
-      <i class="icon-left-arrow" style="margin-top: 10px; margin-right: 5px;"></i>
-    </div>
-    <div class="home-center" onclick="powrotIndex()">
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLIDER - Praktyka</title>
+
+  <!-----------STYLE---------->
+  <link rel="stylesheet" href="../css/praktyka.css" />
+  <link rel="stylesheet" href="../css/fontello.css">
+
+  <!-----------SCRIPT---------->
+  <script src="../js/link-functions.js" defer></script>
+  <script src="../js/slide-nav.js" defer></script>
+
+</head>
+
+<body onmousemove="showNav2(event)">
+
+  <nav id="slide-nav" class="navigation">
+    <div id="home-icon" class="home-center" onclick="powrotIndex()">
       <i class="icon-home" style="margin-right: 5px;"></i>
       <p>POWRÓT</p>
     </div>
-    <div class="arrow-right">
-      <i class="icon-right-arrow" style="margin-top: 10px; margin-left: 10px;"></i></i>
+  </nav>
+
+  <div class="main-container">
+    <div id="practise-1" class="optBox" onclick="cwiczenie1()">
+      <i class="icon-file-code"></i>
+      <div>ĆWICZENIE 1</div>
     </div>
-  </body>
+    <div id="practise-2" class="optBox" onclick="cwiczenie2()">
+      <i class="icon-file-code"></i>
+      <div>ĆWICZENIE 2</div>
+    </div>
+  </div>
+
+
+</body>
+
 </html>

@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="js/index.js" defer></script>
-  </head>
-  <body>
-    <h1
-      style="
-        text-align: center;
-        margin-top: 10px;
-        font-size: 7em;
-        font-family: 'Euqlid';
-      "
-    >
-      SLIDER
-    </h1>
-    <div id="container">
-      <div class="optBox" onclick="teoria()">
-        <img src="img/teoria-icon.png" alt="" width="40%" />
-        <div class="name">Teoria</div>
-      </div>
-      <div class="optBox" onclick="praktyka()">
-        <img
-          style="margin-left: 60px"
-          src="img/praktyka-icon.png"
-          alt=""
-          width="40%"
-        />
-        <div style="margin-left: 25px" class="name">Praktyka</div>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLIDER</title>
+  <link rel="icon" href="img/web-icon.png">
+
+  <!-----------STYLE---------->
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="../css/fontello.css">
+
+  <!-----------SCRIPT---------->
+  <script src="js/link-functions.js" defer></script>
+
+</head>
+
+<body>
+
+  <div class="main-container">
+
+    <div class="excercise" onclick="zadanie()">
+      <p>ZADANIE</p>
+      <i class="icon-lightbulb  "></i>
     </div>
-  </body>
+
+    <div class="main-title">SLIDER</div>
+
+    <div id="container">
+      <div class="optBox theoryBox" onclick="teoria()">
+        <img src="img/teoria-icon.png" alt="teoria-icon"/>
+        <div class="name">TEORIA</div>
+      </div>
+      <div class="optBox practiseBox" onclick="praktyka()">
+        <img src="img/praktyka-icon.png" alt="praktyka-icon"/>
+        <div class="name">PRAKTYKA</div>
+      </div>
+    </div>  
+    <footer>
+      <div id="footer-div-1">Copyright © 2022</div>
+      <div id="footer-div-2">by Kamil Zagórski 2P & Tomasz Wilk 2P</div>
+    </footer>
+  </div>
+
+</body>
+
 </html>

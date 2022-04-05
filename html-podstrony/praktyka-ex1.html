@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SLIDER - Ćwiczenie 1</title>
+
+  <!-----------STYLE---------->
+  <link rel="stylesheet" href="../css/praktyka-ex1.css" />
+  <link rel="stylesheet" href="../css/fontello.css">
+
+  <!-----------SCRIPT---------->
+  <script src="../js/link-functions.js" defer></script>
+  <script src="../js/slide-nav.js" defer></script>
+  
+</head>
+
+<body onmousemove="showNav(event)">
+
+  <div id="current-slide-number" class="slide-number"><p>1/10</p></div>
+
+  <nav id="slide-nav" class="navigation">
+    <div id="arrow-left-icon" class="arrow-left" onclick="prevSlide()">
+      <i class="icon-left-arrow" style="margin-top: 10px; margin-right: 5px;"></i>
+    </div>
+    <div class="center-nav-box">
+        <div id="home-icon" class="home-center" onclick="powrotIndex()">
+            <i class="icon-home" style="margin-right: 5px;"></i>
+            <p>POWRÓT</p>
+          </div>
+          <div id="ex-list" class="ex-list" onclick="backToPraktyka()">
+              <i class="icon-list" style="margin-right: 5px;"></i>
+              <p>WYBÓR ĆWICZEŃ</p>
+          </div>
+    </div>
+    <div id="arrow-right-icon" class="arrow-right" onclick="nextSlide()">
+      <i class="icon-right-arrow" style="margin-top: 10px; margin-left: 10px;"></i></i>
+    </div>
+  </nav>
+
+
+  <section class="slides" id="slide-1">
+    
+  </section>
+
+</body>
+
+</html>

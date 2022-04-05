@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Euqlid';
+  src: URL('../fonts/Euclid-Circular.ttf') format('truetype');
+}
+
 :root {
   --bg-color: #172142;
   --color1: #cfdae6;
@@ -6,9 +11,13 @@
   --color4: #9c9c9c;
   --color5: #6979a8;
   --color6: #f4f4f4;
+  --color7: #273037;
 }
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: #ffffff;
+  font-family: 'Euqlid';
 }
