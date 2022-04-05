@@ -4,14 +4,13 @@ body {
   display: flex;
   justify-content: center;
   /* background-image: url("../img/test-bg-32.png"); */
-  background-image: url("../img/test-bg-4.png");
+  background-image: url('../img/test-bg-4.png');
   background-size: cover;
 }
 
-
 /* --------------------NAVIGATION-------------------- */
 
-nav.navigation{
+nav.navigation {
   width: 100%;
   height: 0%;
   display: flex;
@@ -26,7 +25,7 @@ nav.navigation{
   transition: 0.8s;
 }
 
-.home-center{
+.home-center {
   width: 200px;
   height: 60px;
   display: flex;
@@ -35,18 +34,18 @@ nav.navigation{
   transition: 1s;
 }
 
-.home-center i{
+.home-center i {
   font-size: 2em;
 }
 
-.home-center:hover{
+.home-center:hover {
   background-color: rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
 
 /* --------------------MAIN CONTENT-------------------- */
 
-.main-container{
+.main-container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -55,7 +54,7 @@ nav.navigation{
   justify-content: space-evenly;
 }
 
-.optBox{
+.optBox {
   width: 40%;
   height: 30%;
   min-width: 450px;
@@ -74,7 +73,8 @@ nav.navigation{
   box-shadow: 0 0 0.8em #ffffff40;
 }
 
-.optBox i, .optBox div{
+.optBox i,
+.optBox div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,11 +82,11 @@ nav.navigation{
   margin: 0px 10px;
 }
 
-.optBox i{
+.optBox i {
   font-size: 5em;
 }
 
-.optBox div{
+.optBox div {
   font-size: 2.5em;
   text-shadow: 3px 2px 17px rgba(0, 0, 0, 0.4);
-}
+} 

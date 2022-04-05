@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="pl-PL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLIDER - Ćwiczenie 1</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SLIDER - Ćwiczenie 1</title>
+    <!-----------STYLE---------->
+    <link rel="stylesheet" href="../css/praktyka-ex1.css" />
+    <link rel="stylesheet" href="../css/fontello.css" />
 
-  <!-----------STYLE---------->
-  <link rel="stylesheet" href="../css/praktyka-ex1.css" />
-  <link rel="stylesheet" href="../css/fontello.css">
+    <!-----------SCRIPT---------->
+    <script src="../js/link-functions.js" defer></script>
+    <script src="../js/slide-nav.js" defer></script>
+    <script src="../js/praktyka.js" defer></script>
+  </head>
 
-  <!-----------SCRIPT---------->
-  <script src="../js/link-functions.js" defer></script>
-  <script src="../js/slide-nav.js" defer></script>
-  
-</head>
-
-<body onmousemove="showNav(event)">
-
-  <div id="current-slide-number" class="slide-number"><p>1/10</p></div>
+  <body onmousemove="showNav(event)">
+     <div id="current-slide-number" class="slide-number"><p>1/10</p></div>
 
   <nav id="slide-nav" class="navigation">
     <div id="arrow-left-icon" class="arrow-left" onclick="prevSlide()">
@@ -43,8 +41,42 @@
 
   <section class="slides" id="slide-1">
     
-  </section>
+     
+    <img src="../img/czesc-1.png" alt="">
 
-</body>
-
+    </section> 
+    <section class="slides" id="slide-2">
+    
+     
+      <div id="slider-container">
+        <div class="slidy">
+          <img
+            src="../img/slidy/photo-1612099452850-ed8efe7d58ff.jpg"
+            width="100%"
+            height="320px"
+            alt=""
+          />
+        </div>
+        <div class="slidy">
+          <img
+            src="../img/slidy/Winter_forest_(4348808591).jpg"
+            width="100%"
+            height="320px"
+            alt=""
+          />
+        </div>
+        <div class="slidy">
+          <img
+            src="../img/slidy/winter_forest_by_andanguyen_dbvzm3t-fullview.jpg"
+            width="100%"
+            height="320px"
+            alt=""
+          />
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+  
+      </section> 
+  </body>
 </html>
