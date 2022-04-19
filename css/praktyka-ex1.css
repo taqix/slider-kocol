@@ -162,3 +162,31 @@ nav.navigation {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
+.slidy {
+  animation-name: przejscie;
+  animation-iteration-count: 1;
+  animation-duration: 1s;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+@keyframes przejscie {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
