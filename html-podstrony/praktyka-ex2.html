@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SLIDER - Ćwiczenie 2</title>
+
+    <!-----------STYLE---------->
+    <link rel="stylesheet" href="../css/praktyka-ex2.css" />
+    <link rel="stylesheet" href="../css/fontello.css" />
+
+    <!-----------SCRIPT---------->
+    <script src="../js/link-functions.js" defer></script>
+    <script src="../js/slide-nav.js" defer></script>
+    <script src="../js/js.praktyka-ex2.js" defer></script>
+</head>
+
+<body onmousemove="showNav(event)">
+
+    <div id="current-slide-number" class="slide-number"><p>1/10</p></div>
+
+    <nav id="slide-nav" class="navigation">
+        <div id="arrow-left-icon" class="arrow-left" onclick="prevSlide()">
+            <i class="icon-left-arrow" style="margin-top: 10px; margin-right: 5px;"></i>
+        </div>
+        <div class="center-nav-box">
+            <div id="home-icon" class="home-center" onclick="powrotIndex()">
+                <i class="icon-home" style="margin-right: 5px;"></i>
+                <p>POWRÓT</p>
+            </div>
+            <div id="ex-list" class="ex-list" onclick="backToPraktyka()">
+                <i class="icon-list" style="margin-right: 5px;"></i>
+                <p>WYBÓR ĆWICZEŃ</p>
+            </div>
+        </div>
+        <div id="arrow-right-icon" class="arrow-right" onclick="nextSlide()">
+            <i class="icon-right-arrow" style="margin-top: 10px; margin-left: 10px;"></i></i>
+        </div>
+    </nav>
+
+
+    <section class="slides" id="slide-1">
+
+        <div class="slide-text">
+            <div class="title">
+                KROK 1
+            </div>
+            <div class="subtitle">
+                Struktura kodu HTML
+            </div>
+        </div>
+        <img class="slide-img" src="../img/Ex-2/ex-2-step-01.png" alt="step-01">
+
+    </section>
+
+    <section class="slides" id="slide-2">
+
+        <div class="slide-text">
+            <div class="title">
+                KROK 2
+            </div>
+            <div class="subtitle">
+                Podstawowy reset ustawień strony
+            </div>
+        </div>
+        <img class="slide-img" src="../img/Ex-2/ex-2-step-02.png" alt="step-01">
+
+    </section>
+
+    <section class="slides" id="slide-3">
+
+        <div class="slide-text">
+            <div class="title">
+                KROK 3
+            </div>
+            <div class="subtitle">
+                Centrowanie div'a z naszym slider'em
+            </div>
+        </div>
+        <img class="slide-img" src="../img/Ex-2/ex-2-step-03.png" alt="step-01">
+
+    </section>
+
+    <section class="slides" id="slide-4">
+
+        <div class="slide-text">
+            <div class="title">
+                KROK 4
+            </div>
+            <div class="subtitle">
+                <p>Stylowanie div'a z głównym obrazem ustawionym jako <i>"background-image"</i></p>
+            </div>
+        </div>
+        <img class="slide-img" src="../img/Ex-2/ex-2-step-04.png" alt="step-01">
+
+    </section>
+
+    <section class="slides" id="slide-5">
+
+        <div class="slide-text">
+            <div class="title">
+                KROK 5
+            </div>
+            <div class="subtitle">
+                Stylowanie obrazu przesłaniającego
+            </div>
+        </div>
+        <img class="slide-img" src="../img/Ex-2/ex-2-step-05.png" alt="step-01">
+
+    </section>
+
+    <section class="slides" id="slide-6">
+
+        <div class="slide-text">
+            <div class="title">
+                KROK 6
+            </div>
+            <div class="subtitle">
+                Stylowanie input'a
+            </div>
+        </div>
+        <img class="slide-img" src="../img/Ex-2/ex-2-step-06.png" alt="step-01">
+
+    </section>
+
+    <section class="slides" id="slide-7">
+
+        <div class="slide-text">
+            <div class="title">
+                KROK 7
+            </div>
+            <div class="subtitle">
+                Aktualizacja kodu HTML
+            </div>
+        </div>
+        <img class="slide-img" src="../img/Ex-2/ex-2-step-07.png" alt="step-01">
+
+    </section>
+
+    <section class="slides" id="slide-8">
+
+        <div class="slide-text">
+            <div class="title">
+                KROK 8
+            </div>
+            <div class="subtitle">
+                Kod Java Script
+            </div>
+        </div>
+        <img class="slide-img" src="../img/Ex-2/ex-2-step-08.png" alt="step-01">
+
+    </section>
+
+    <section class="slides" id="slide-9">
+
+        <div class="slide-text">
+            <div class="title">
+                EFEKT KOŃCOWY
+            </div>
+        </div>
+        <video controls> 
+            <source src="../img/Ex-2/comparision-slider-video.mp4">
+            Your browser does not support HTML video
+        </video>
+
+    </section>
+
+</body>
+
+</html>

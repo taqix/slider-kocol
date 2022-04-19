@@ -1,0 +1,55 @@
+@import url(global.css);
+
+body {
+  display: flex;
+  justify-content: center;
+  /* background-image: url("../img/test-bg-32.png"); */
+  background-image: url('../img/test-bg-32.png');
+  background-size: cover;
+}
+
+/* --------------------NAVIGATION-------------------- */
+
+nav.navigation {
+  width: 100%;
+  height: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 2;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow-y: hidden;
+  transition: 0.8s;
+}
+
+.home-center {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 1s;
+}
+
+.home-center i {
+  font-size: 2em;
+}
+
+.home-center:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+/* --------------------MAIN CONTENT-------------------- */
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}

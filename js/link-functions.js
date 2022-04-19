@@ -21,3 +21,6 @@ function cwiczenie1(){
 function cwiczenie2(){
   window.location.href = 'praktyka-ex2.html'
 }
+function zadanie(){
+  window.location.href = 'html-podstrony/zadanie.html';
+}
